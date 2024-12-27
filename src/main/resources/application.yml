@@ -1,0 +1,39 @@
+# Veritabanı Ayarları
+spring:
+  datasource:
+    platform: postgresql
+    url: jdbc:postgresql://localhost:5432/test
+    username: postgres
+    password: 1234
+    driverClassName: org.postgresql.Driver
+
+  jpa:
+    database: POSTGRESQL
+    hibernate:
+      ddl-auto: update
+    generate-ddl: true
+    show-sql: true
+
+  http:
+    encoding:
+      force: true
+      charset: UTF-8
+      enabled: true
+
+# E-posta Ayarları
+  mail:
+    host: 
+    port: 
+    username: 
+    password: 
+    protocol: 
+    properties:
+      mail:
+        smtp:
+          auth: 
+          starttls:
+            enable: 
+            required: 
+          ssl:
+            enable: 
+            trust:
